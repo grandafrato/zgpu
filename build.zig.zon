@@ -1,6 +1,7 @@
 .{
-    .name = "zgpu",
+    .name = .zgpu,
     .version = "0.12.0-dev",
+    .fingerprint = 0x670ebe043f129ff4,
     .paths = .{
         "build.zig",
         "build.zig.zon",
@@ -10,10 +11,6 @@
         "LICENSE",
     },
     .dependencies = .{
-        .zpool = .{
-            .url = "https://github.com/zig-gamedev/zpool/archive/820e0e59dc415d9784004464a6cf52223fbce126.tar.gz",
-            .hash = "1220e600a92d73dc8c3b5303351dcc67352114c975e59ae55de11b637ec173e75455",
-        },
         .system_sdk = .{
             .url = "https://github.com/zig-gamedev/system_sdk/archive/d1e724748d15cfcbf50c45ec7c7019688d45b16a.tar.gz",
             .hash = "122047a9298c4c9dd43389d418d6826d469b192246ba0944102964cdc57f94c562df",
@@ -42,6 +39,10 @@
             .url = "https://github.com/michal-z/webgpu_dawn-x86_64-macos/archive/901716b10b31ce3e0d3fe479326b41e91d59c661.tar.gz",
             .hash = "1220b1f02f2f7edd98a078c64e3100907d90311d94880a3cc5927e1ac009d002667a",
             .lazy = true,
+        },
+        .zpool = .{
+            .url = "git+https://github.com/zig-gamedev/zpool.git#99a4c74ec26b1f327209782565b4adaf1c1d610f",
+            .hash = "zpool-0.11.0-dev-bG692eY7AQDLTkjTbgnbg_-qgjmxUCg8hNpN1kZRrIlW",
         },
     },
 }
